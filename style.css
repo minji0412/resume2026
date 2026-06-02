@@ -1,0 +1,55 @@
+.hero_image-box {
+  width: 274px;
+  height: 352px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  overflow: hidden;
+  gap: 24px;
+}
+.hero_image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero {
+  display: flex;
+  width: 875.5px;
+  align-items: center;
+  gap: 24px;
+}
+.hero_top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero_text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero_text-box h1 {
+  margin: 0;
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero_text-box h2 {
+  margin: 0;
+  color: #778436;
+  font-family: "Pretendard Variable";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero_contact {
+  width: 875.5px;
+  height: 67px;
+  border-radius: 40px;
+  background-color: rgba(206, 219, 138, 0.4);
+  filter: drop-shadow(0 2px 8.9px rgba(0, 0, 0, 0.25));
+}
