@@ -4,7 +4,6 @@
   flex-shrink: 0;
   border-radius: 36px;
   overflow: hidden;
-  gap: 24px;
 }
 .hero_image-box img {
   width: 100%;
@@ -16,11 +15,7 @@
   width: 875.5px;
   align-items: center;
   gap: 24px;
-}
-.hero_top {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  margin-bottom: 36px;
 }
 
 .hero_text-box {
@@ -47,9 +42,142 @@
   line-height: normal;
 }
 .hero_contact {
+  display: flex;
+  align-items: center;
+  gap: 150px;
   width: 875.5px;
   height: 67px;
   border-radius: 40px;
   background-color: rgba(206, 219, 138, 0.4);
   filter: drop-shadow(0 2px 8.9px rgba(0, 0, 0, 0.25));
+}
+.hero_contact h3 {
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  padding-left: 35px;
+}
+.hero_contact a {
+  color: #556b2f;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+}
+.hero_contact svg {
+  width: 16px;
+  height: 16px;
+}
+.hero_contact span {
+  color: black;
+  font-family: "Pretendard Variable";
+  font-size: 15px;
+}
+
+.about-me {
+  margin-top: 63px;
+  width: 830px;
+  height: 261px;
+  border-radius: 40px;
+  padding: 33px 29px;
+  box-sizing: border-box;
+  background: rgba(254, 253, 244, 0.8);
+  box-shadow: 0 2px 8.9px 0 rgba(0, 0, 0, 0.25);
+}
+.about-me h3 {
+  margin: 0;
+  display: inline-block;
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  margin: 0 0 24px 0;
+  border-bottom: 2px solid #556b2f;
+  padding-bottom: 6px;
+}
+
+.about-me p {
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 15px;
+  font-style: normal;
+  letter-spacing: 1.8px;
+  margin: 0 0 12px;
+}
+
+.strength {
+  margin-top: 63px;
+  width: 830px;
+  height: 261px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  padding: 20px 29px;
+  background: rgba(254, 253, 244, 0.8);
+  box-shadow: 0 2px 8.9px 0 rgba(0, 0, 0, 0.25);
+}
+.strength-list li {
+  width: 179px;
+  height: 179px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  background: rgba(254, 253, 246, 0.6);
+  box-shadow: 0 2px 5.2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.strength h3 {
+  width: fit-content;
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  margin: 0 0 12px 0;
+  border-bottom: 2px solid #556b2f;
+  padding-bottom: 6px;
+}
+
+.strength-list {
+  display: flex;
+  font-family: "Pretendard Variable";
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.strength-list h4 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-family: "Pretendard Variable";
+}
+
+.strength-list p {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.strength-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ebefc6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.strength-icon svg {
+  width: 28px;
+  height: 28px;
 }
