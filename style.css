@@ -1,9 +1,16 @@
+body {
+  margin: 0;
+  background: #fcfbf3;
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .main {
   width: 906px;
   min-width: 906px;
   margin: 0 auto;
   position: relative;
-  background: #fcfbf3;
   padding-left: 33px;
   align-items: center;
 }
@@ -13,6 +20,13 @@
   flex-shrink: 0;
   border-radius: 36px;
   overflow: hidden;
+}
+.hero-links svg {
+  fill: black;
+}
+.hero-links img {
+  width: 28px;
+  height: 28px;
 }
 .hero_image-box img {
   width: 100%;
@@ -24,6 +38,7 @@
   width: 875.5px;
   align-items: center;
   gap: 24px;
+  margin-top: 60px;
   margin-bottom: 36px;
 }
 
@@ -31,6 +46,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-left: 50px;
+  transform: translateY(-50px);
 }
 .hero_text-box h1 {
   margin: 0;
@@ -76,6 +93,26 @@
   align-items: center;
   gap: 13px;
   text-decoration: none;
+}
+.hero-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+.hero-links a {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.hero-links svg {
+  width: 24px;
+  height: 24px;
 }
 .hero_contact svg {
   width: 16px;
@@ -192,6 +229,7 @@
 }
 
 .skills h3 {
+  margin-top: 60px;
   padding-left: 25px;
   color: #556b2f;
   font-family: "Pretendard Variable";
@@ -222,6 +260,7 @@
 }
 .skill-group {
   margin-bottom: 32px;
+  margin-left: 50px;
 }
 .skill-card {
   width: 84px;
@@ -238,8 +277,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 0px;
+  justify-content: flex-start;
+  padding-top: 12px;
 }
 .skill-card img {
   width: 42px;
@@ -289,12 +329,12 @@
   margin: 0 0 8px;
 }
 footer {
-  margin-top: 231px;
+  margin-top: 200px;
+  margin-left: -33px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 2px solid #556b2f;
-
   color: #556b2f;
   font-family: "Pretendard Variable";
   font-size: 15px;
