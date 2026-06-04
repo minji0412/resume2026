@@ -1,3 +1,12 @@
+.main {
+  width: 906px;
+  min-width: 906px;
+  margin: 0 auto;
+  position: relative;
+  background: #fcfbf3;
+  padding-left: 33px;
+  align-items: center;
+}
 .hero_image-box {
   width: 274px;
   height: 352px;
@@ -180,4 +189,114 @@
 .strength-icon svg {
   width: 28px;
   height: 28px;
+}
+
+.skills h3 {
+  padding-left: 25px;
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 28px;
+  font-weight: 600;
+}
+.skills h4 {
+  color: #3e4c13;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 160% */
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.skills h4::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #d3d3c9;
+}
+.skill-list {
+  display: flex;
+  gap: 26px;
+}
+.skill-group {
+  margin-bottom: 32px;
+}
+.skill-card {
+  width: 84px;
+  height: 98px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: "Pretendard Variable";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.skill-card img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+.skill-dot {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #899949;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.edcation {
+  margin-top: 60px;
+  padding: 10px 29px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  width: 830px;
+  background: #fefdf4;
+  box-shadow: 0 2px 8.9px 0 rgba(0, 0, 0, 0.25);
+}
+.edcation h3 {
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.education-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.education-item h4 {
+  width: 100px;
+  margin: 0;
+}
+
+.education-text p {
+  margin: 0 0 8px;
+}
+footer {
+  margin-top: 231px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #556b2f;
+
+  color: #556b2f;
+  font-family: "Pretendard Variable";
+  font-size: 15px;
+  font-weight: 400;
 }
