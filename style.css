@@ -5,12 +5,6 @@
   font-weight: 600;
   font-display: swap;
 }
-body {
-  margin: 0;
-  background: #fcfbf3;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
 
 .main {
   width: 100%;
@@ -19,6 +13,34 @@ body {
   position: relative;
   padding-left: 33px;
   box-sizing: border-box;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  top: -400px;
+  left: -330px;
+  width: 780px;
+  height: 780px;
+  border-radius: 50%;
+  opacity: 0.45;
+  background: radial-gradient(circle at 30% 30%, #d9e69b 0%, #f0eb0a 100%);
+  z-index: -2;
+
+  box-shadow:
+    1000px 500px 0 #d9e69b,
+    -50px 1100px 0 #d9e69b;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 1500px;
+  left: 700px;
+  width: 950px;
+  height: 950px;
+  border-radius: 50%;
+  opacity: 0.45;
+  background: radial-gradient(circle at 30% 30%, #d9e69b 0%, #f0eb0a 100%);
+  z-index: -2;
 }
 .hero_image-box {
   width: 274px;
@@ -103,7 +125,7 @@ body {
   transition: transformm 0.2s ease-out;
 }
 .hero_contact a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.05);
 }
 .hero-links {
   display: flex;
@@ -227,7 +249,7 @@ body {
   font-size: 25px;
   margin: 0 0 24px 0;
   border-bottom: 2px solid #556b2f;
-  padding-bottom: 6px;
+  padding: 6px;
 }
 
 .strength-list {
@@ -250,8 +272,6 @@ body {
   font-size: 13px;
   text-align: center;
   line-height: 1.5;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 .strength-icon {
   width: 50px;
@@ -271,10 +291,12 @@ body {
   width: 28px;
   height: 28px;
 }
+.skills {
+  padding: 13px;
+}
 
 .skills h3 {
-  margin-top: 13 0px;
-  padding-left: 25px;
+  margin-top: 100px;
   color: #556b2f;
   font-family: "Pretendard Variable";
   font-size: 28px;
@@ -320,16 +342,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 8px;
   justify-content: flex-start;
 }
-.skill-card img {
+.skill-card img,
+.skill-card svg {
   width: 42px;
   height: 42px;
-  object-fit: contain;
-  padding-top: 10px;
   flex-shrink: 0;
 }
+
 .skill-dot {
   width: 37px;
   height: 37px;
@@ -338,9 +362,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-}
-.skill-group-wrapper {
-  padding-left: 50px;
 }
 .edcation {
   margin-top: 150px;
@@ -392,10 +413,10 @@ footer {
   font-weight: 400;
 }
 
-@media (width < 906px) {
+@media (width < 1023px) {
   .main {
     max-width: 100%;
-    padding: 0 24px;
+    padding: 14px;
   }
 
   .hero {
@@ -445,9 +466,9 @@ footer {
   }
 }
 
-@media (width < 600px) {
+@media (width < 768px) {
   .main {
-    padding: 0 24px;
+    padding: 14px;
   }
 
   .about-me,
@@ -582,21 +603,20 @@ footer {
   .skill-card {
     width: 65px;
     height: 65px;
-    border-radius: 12px;
-    font-size: 13px;
-    gap: 3px;
   }
 
   .skill-card svg,
   .skill-card img {
     width: 24px;
     height: 24px;
-    padding-top: 6px;
   }
 
   .skill-card p {
-    margin: 2px;
+    margin: 0;
     font-size: 12px;
+    text-align: center;
+    line-height: 1.1;
+    white-space: nowrap;
   }
 
   .edcation {
