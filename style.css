@@ -29,7 +29,29 @@
   box-shadow:
     1000px 500px 0 #d9e69b,
     -50px 1100px 0 #d9e69b;
+
+  animation: breathing 10s ease-in-out infinite;
 }
+
+
+
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+}
+
 .main::before {
   content: "";
   position: absolute;
@@ -41,6 +63,7 @@
   opacity: 0.45;
   background: radial-gradient(circle at 30% 30%, #d9e69b 0%, #f0eb0a 100%);
   z-index: -2;
+  animation: breathing 10s ease-in-out infinite;
 }
 .hero_image-box {
   width: 274px;
@@ -412,7 +435,7 @@ footer {
   font-size: 15px;
   font-weight: 400;
 }
-
+/*데스크탑*/
 @media (width < 1023px) {
   .main {
     max-width: 100%;
@@ -454,6 +477,7 @@ footer {
   .strength-list li {
     width: calc((100% - 24px) / 2);
     min-width: 0;
+    background: none;
   }
 
   .skill-group-wrapper {
@@ -465,11 +489,36 @@ footer {
     justify-content: center;
   }
 }
-
+/*모바일*/
 @media (width < 768px) {
   .main {
     padding: 14px;
   }
+
+.main::after {
+  top: -150px;
+  left:-150px;
+
+  width: 400px;
+  height: 400px;
+
+  box-shadow: 
+  480px 400px 0 #d9e69b,
+  450px 1500px 0 #d9e69b,
+  -50px 2000px 0 #d9e69b,
+  -50px 900px 0 #d9e69b;
+
+}
+
+.main::before {
+    top: 2600px;
+    left: 180px;
+
+    width: 500px;
+    height: 500px;
+  }
+
+}
 
   .about-me,
   .strength,
@@ -478,6 +527,7 @@ footer {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+    background: transparent;
     border: none;
     box-shadow: none;
   }
