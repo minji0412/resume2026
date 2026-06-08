@@ -6,6 +6,7 @@
 이 프로젝트는 HTML과 CSS를 활용하여 제작한 개인 포트폴리오 웹사이트로, 저의 학습 과정과 역량을 소개하기 위해 제작하였습니다.
 <br>
 
+<img width="1396" height="814" alt="데스크탑" src="https://github.com/user-attachments/assets/684430f5-60b2-4d9f-b891-a99ea76ac604" />
 
 
 ## 🔗 Live Demo
@@ -98,15 +99,21 @@ portfolio/
 <h2> 📱Responsive Design </h2>
 
 ## Desktop (1024px ~)
+<img width="1396" height="814" alt="데스크탑" src="https://github.com/user-attachments/assets/a83deba4-4424-4b69-88f3-a524f46d5d33" />
+
 
 - 가로 레이아웃 구성
 
 ## Tablet (768px ~)
+<img width="1375" height="1170" alt="태블릿" src="https://github.com/user-attachments/assets/97a46aeb-e842-46e7-a98d-87920429b68f" />
+
 
 - 콘텐츠 간격 조정
 - 텍스트 크기 조정
 
 ## Mobile (320px ~)
+<img width="705" height="1200" alt="모바일" src="https://github.com/user-attachments/assets/abdec265-286b-4482-bc1f-d6d52f064d6f" />
+
 
 - 세로 레이아웃 변경
 - 콘텐츠 최적화
